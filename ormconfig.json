@@ -1,0 +1,28 @@
+{
+   "type": "mssql",
+   "host": "localhost",
+   "username": "sa",
+   "password": "123456",
+   "database": "solutiondesigns",
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "extra":{
+      "max":10,
+      "min":2,
+      "connectionTimeout":30000
+   },
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
